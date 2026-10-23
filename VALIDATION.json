@@ -1,0 +1,29 @@
+{
+  "validated_utc": "2026-10-22T18:12:09.738997+00:00",
+  "project": "Studio_ExcelTemplatePOC",
+  "java_8_compilation_passed": true,
+  "actual_local_assembly_runtime_passed": true,
+  "aunit_initializer_and_before_after_assertions_observed": true,
+  "independent_sample_feature_checks_passed": 27,
+  "studio_GUI_import_and_Run_As_verified": true,
+  "tenant_deployment_or_runtime_verified": false,
+  "vba_execution_verified": false,
+  "vendor_workbook_verified": false,
+  "sources": [
+    {
+      "file": "Studio_ExcelTemplatePOC/src/main/java/example/timeoff/TimeOffTemplatePopulator.java",
+      "sha256": "e0e7438ee31a0534a7e5410f780740d8760b09230e33019d3b0e0fab8ce302aa"
+    },
+    {
+      "file": "Studio_ExcelTemplatePOC/src/main/java/example/timeoff/TimeOffTemplateTest.java",
+      "sha256": "e5d030fdd2c0be74b3ba6304005f3ec02b662d6b36995781d61d48af3e5bb6f9"
+    }
+  ],
+  "assembly_sha256": "3c90fc9b5a149169805c32337f7e8591e1cdfe75e24cc504cf45285b6447f187",
+  "native_aunit_runs": 1,
+  "native_aunit_errors": 0,
+  "native_aunit_failures": 0,
+  "native_aunit_security_policy_unchanged": true,
+  "native_aunit_output_sha256": "89ad1a18ee2a63649d60eb9149fddb14a5023db6dcf29eebac00a698efc6d481",
+  "output_save_method": "Files.createTempFile in the native runtime permitted temporary directory"
+}

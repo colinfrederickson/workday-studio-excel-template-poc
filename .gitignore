@@ -1,0 +1,18 @@
+# Keep Studio project metadata; it is needed to import the project.
+/build/
+/bin/
+/generated/
+/.metadata/
+*.class
+*.jar
+*.log
+*.zip
+*.launch
+*.tmp
+.DS_Store
+~$*
+.env
+.env.*
+*.key
+*.p12
+*.jks

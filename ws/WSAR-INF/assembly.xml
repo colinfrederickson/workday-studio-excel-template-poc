@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:cc="http://www.capeclear.com/assembly/10"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- AUnit supplies the existing XLSM as a binary root message part. -->
+  <cc:assembly id="WorkdayAssembly" version="2026.24">
+    <cc:local-in id="Start" routes-to="Populate"/>
+    <cc:async-mediation id="Populate">
+      <cc:steps>
+        <cc:custom id="PopulateTemplate" ref="timeOffTemplatePopulator"
+                   method-name="process" input="rootpart" output="rootpart"
+                   output-mimetype="application/vnd.ms-excel.sheet.macroEnabled.12"/>
+      </cc:steps>
+    </cc:async-mediation>
+  </cc:assembly>
+  <bean id="timeOffTemplatePopulator"
+        class="example.timeoff.TimeOffTemplatePopulator" scope="singleton"/>
+</beans>
